@@ -5,13 +5,19 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Template is Working</title>
+    <title>Text utils</title>
 </head>
 <body>
 <h1>Welcome to text analyzer Enter your text below</h1>
-<form action='/removepunc', method="get">
-    <textarea name="text" style="margin:0px; width:721px; height:93px;"></textarea>
-    <button type="submit">Analyze textarea</button>
+<form action='/analyze', method="get">
+    <textarea name="text" style="margin:0px; width:721px; height:93px;"></textarea><br>
+    <input type="checkbox" name="removepunc">Remove Punctuations <br>
+    <input type="checkbox" name="fullcaps"> UPPERCASE <br>
+    <input type="checkbox" name="newlineremover"> New Line Remover <br>
+    <input type="checkbox" name="extraspaceremover"> Extra Space Remover <br>
+    <input type="checkbox" name="alphabetcounter"> Alphabet Counter <br>
+
+    <button type="submit">Analyze Text</button>
 
 </form>
 </body>
